@@ -107,25 +107,67 @@ print(dog1.owner.contect)
 
 # getters and setters
 
-class User :
-    def __init__(self , username , email , password):
-        self.username = username
-        self.__email = email
-        self.__password = password
+# class User :
+#     def __init__(self , username , email , password):
+#         self.username = username
+#         self.__email = email
+#         self.__password = password
     
     
-    def get_email(self):
-        return self.__email
+#     def get_email(self):
+#         return self.__email
     
-    def set_email(self , newEmail) :
-        self.__email = newEmail
+#     def set_email(self , newEmail) :
+#         if "@" in newEmail : 
+#             self.__email = newEmail
         
         
-    def greeting(self) :
-        print(f"hi {self.username} how are you...")
+#     def greeting(self) :
+#         print(f"hi {self.username} how are you...")
         
 
-user1 = User("Rio" , "xyz123@gmail.com" , "01010011")
-print(user1.get_email())
-user1.set_email("hilal123@gmail.com")
-print(user1.get_email())
+# user1 = User("Rio" , "xyz123@gmail.com" , "01010011")
+# print(user1.get_email())
+# user1.set_email("hilal123@gmail.com")
+# print(user1.get_email())
+
+
+# __str__()
+
+# class User :
+#     def __init__(self , username , email , password):
+#         self.username = username
+#         self.email = email
+#         self.password = password
+        
+#     def __str__(self):
+#         return f"username is {self.username} and email is {self.email}"
+        
+        
+# user1 = User("Hilal" , "hilalahmadcodedev123@gmail.com" , "10100011")
+# print(user1)
+
+
+
+# static attributes
+
+# class User :
+#     user_count = 0
+    
+#     def __init__(self , username , email):
+#         self.username = username
+#         self.email = email
+#         User.user_count += 1
+        
+
+
+# user1 = User("Abc" , "abc@gmail.com")
+# user2 = User("xyz" , "xyz@gmail.com")
+# user3 = User("xyz" , "xyz@gmail.com")
+# print(User.user_count) 
+
+
+
+# static Mathods
+
+   
