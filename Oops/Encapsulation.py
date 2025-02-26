@@ -80,5 +80,9 @@ class Students:
         
 
 student1  = Students("Hilal", "lolab" , "BCA" , "GDC-Fakarchand" , "772-282-828" , "hilalahmadcodedev123@gmail.com" , "01010011" , "bca_fakarchand0101" , "001101063")
-student1.studentInfo();
+student1.studentInfo()
+student1.student_personal_info()
+
+# manipulation privete data using getters and setters
+student1.set_student_personal_info("990-883-000" , "abc123@gmail.com" , "01010101" , "gdgdghka" , "01083764")
 student1.student_personal_info()
