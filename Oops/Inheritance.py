@@ -23,9 +23,12 @@ class Female(Human) :
     
         
         
-homosapiens = Human("Earth" , "random" , "6-feet" , "60-above") 
 male1 = Male("Fakarchand" , 100 , "yathlampoor" , "PTSD")
-female1 = Female("tokyo" , "20" , "phillippens" , "12th-fail")
+male1.planet = "Earth"
+male1.color = "rabdom"
+male1.height = "6-feet"
+male1.weight = "60-above"
+
 
 print(male1.planet)
 print(male1.color)
@@ -36,7 +39,12 @@ print(male1.age)
 print(male1.address)
 print(male1.qualification)
 
-print("\n\n")
+print("\n")
+female1 = Female("tokyo" , "20" , "phillippens" , "12th-fail")
+female1.planet = "Earth"
+female1.color = "rabdom"
+female1.height = "6-feet"
+female1.weight = "60-above"
 
 print(female1.planet)
 print(female1.color)
