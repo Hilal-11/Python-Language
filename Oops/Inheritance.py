@@ -92,11 +92,50 @@ print(f'''
         color: {dog1.color}
       ''')       
     
+    
+# multi-level inheritance
 
 
+# multiple inheritance
+
+class Father :
+    def __init__(self , name , age):
+        self.name = name
+        self.age = age
+class Mother :
+    def __init__(self , height , weight):
+        self.height = height
+        self.weight = weight
+        
+class Child(Father , Mother) :
+    def __init__(self , gender):
+        self.gender = gender
+    def displayChildInfo(self) :
+        print(f'''
+              name : {self.name}
+              age : {self.age}
+              height : {self.height}
+              weight : {self.weight}
+              gender : {self.gender} 
+            ''')  
 
 
+son = Child("male")
+son.name = "Danver"
+son.age = "12"
+son.height = "4-feet"
+son.weight = "28-kg"
 
+son.displayChildInfo()
+print("\n")
+
+daughter = Child("female")
+daughter.name = "Tokiyo"
+daughter.age = "15"
+daughter.height = "4.6-feet"
+daughter.weight = "34-kg"
+
+daughter.displayChildInfo()
 
 
 
