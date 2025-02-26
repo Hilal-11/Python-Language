@@ -54,3 +54,56 @@ print(female1.name)
 print(female1.age)
 print(female1.address)
 print(female1.qualification)
+
+
+
+# Inheritance Types
+    # single inheritance
+    # multi-level inheritance
+    # multiple inheritance
+    # Hierarchial Inheritance
+    # hibrid inheritance
+
+
+# single inheritance
+
+class Animal :
+    def __init__(self , name , catagory):
+        self.name = name
+        self.catagory = catagory
+    def speak(self) :
+        return "animals mske sound"
+        
+
+class Dog(Animal) :
+    def __init__(self , color):
+        self.color = color
+    def speak (self) :
+        return "bark"
+
+
+dog1 = Dog("black")
+dog1.name = "Tommy"
+dog1.catagory = "pitbul"
+
+print(f'''
+        name: {dog1.name}
+        catagory: {dog1.catagory}
+        color: {dog1.color}
+      ''')       
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
