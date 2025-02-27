@@ -166,9 +166,29 @@ class Car(Vehicles):
               car wheels : {self.number_of_wheels}
             ''')
         
-
+class Bike (Vehicles):
+    def __init__(self , brand , model  , year , color , number_of_wheels) :
+        super().__init__(brand , model , year)
+        self.color = color
+        self.number_of_wheels = number_of_wheels
+    
+    def displayBiksInfo(self) :
+        print(f'''
+            bike name : {self.brand}
+            bike model : {self.model}
+            bike brand : {self.brand}
+            bike year : {self.year}
+            bike wheels : {self.number_of_wheels}
+        ''')
 
 car1 = Car("Bugati", 2025, "2-year", "gray", 4)
 car1.displayCarInfo()
 car1.start()
 car1.stop()
+
+print("\n")
+
+bike1 = Bike("KTM-200", 2022 , "3-years" , "Orange" , 2)
+bike1.displayBiksInfo()
+bike1.start()
+bike1.stop()
