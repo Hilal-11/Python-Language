@@ -195,10 +195,6 @@ bike1.stop()
 
 
 
-
-
-
-
 class Human :
     def __init__(self , planet, color , height , weight):
         self.planet = planet
