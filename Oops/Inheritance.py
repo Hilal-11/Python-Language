@@ -138,11 +138,37 @@ daughter.weight = "34-kg"
 daughter.displayChildInfo()
 
 
+#  inheritance examples
 
-
-
-
-
-
-
+class Vehicles :
+    def __init__(self , brand , model , year):
+        self.brand = brand
+        self.model = model
+        self.year = year
     
+    def start(self) :
+        print("Vehicles can start")
+    def stop(self) :
+        print("Vehicles can stop")
+        
+class Car(Vehicles):
+    def __init__(self,  brand , model , year  , color , number_of_wheels):
+        super().__init__(brand , model , year)
+        self.color = color
+        self.number_of_wheels = number_of_wheels
+    
+    def displayCarInfo(self) :
+        print(f'''
+              car name : {self.brand}
+              car model : {self.model}
+              car brand : {self.brand}
+              car year : {self.year}
+              car wheels : {self.number_of_wheels}
+            ''')
+        
+
+
+car1 = Car("Bugati", 2025, "2-year", "gray", 4)
+car1.displayCarInfo()
+car1.start()
+car1.stop()
