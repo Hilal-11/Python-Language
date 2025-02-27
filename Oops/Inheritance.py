@@ -192,3 +192,79 @@ bike1 = Bike("KTM-200", 2022 , "3-years" , "Orange" , 2)
 bike1.displayBiksInfo()
 bike1.start()
 bike1.stop()
+
+
+
+
+
+
+
+class Human :
+    def __init__(self , planet, color , height , weight):
+        self.planet = planet
+        self.color = color
+        self.heigh = height
+        self.weight = weight
+        
+    def eat(self):
+        print("Humans can eat")
+    def sleep(self):
+        print("Humans can sleep")
+    def walk(self) :
+        print("Humans can walk")
+    def talk(self) :
+        print("Humans can talk")
+    
+class Male(Human):
+    def __init__(self ,planet, color , height , weight,  name , age , address , qualification):
+        super().__init__(planet, color , height , weight)
+        self.name = name
+        self.age = age
+        self.address = address
+        self.qualification = qualification
+        
+    def displayMaleProperties(self) :
+        print(f'''
+              planet : {self.planet}
+              name: {self.name}
+              age : {self.age}
+              address: {self.address}
+              height: {self.heigh}
+              weight: {self.weight}
+              color : {self.color}
+              qualification : {self.qualification}
+            ''')
+        
+    
+class Female(Human) :
+    def __init__(self , planet, color , height , weight, name , age , address , qualification):
+        super().__init__(planet, color , height , weight,)
+        self.name = name
+        self.age = age
+        self.address = address
+        self.qualification = qualification
+    
+    def displayFemaleProperties(self):
+        print(f'''
+            planet : {self.planet}
+            name: {self.name}
+            age : {self.age}
+            address: {self.address}
+            height: {self.heigh}
+            weight: {self.weight}
+            color : {self.color}
+            qualification : {self.qualification}
+        ''')
+        
+male1 = Male("Earth" , "white" , "6-feet" , "60kg" , "Fakarchand", "20" , "kupwara" , "BCA")
+male1.displayMaleProperties()
+male1.eat()
+male1.sleep()
+male1.talk()
+male1.walk()
+female1 = Female("Earth" , "dark" , "6.5-feet" , "68kg" , "Faizan", "67" , "kupwara kralpoors" , "MCA")
+female1.displayFemaleProperties()
+female1.eat()
+female1.sleep()
+female1.talk()
+female1.walk()
