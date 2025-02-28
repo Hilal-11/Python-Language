@@ -22,5 +22,16 @@ print(random.choice(fruits))
 
 
 data = ['A' , 'B' , 'C' , 'D' , 'E' , ' F']
-randomIdx = random.randint(0 , len(data))
+randomIdx = random.randint(0 , len(data)-1)
 print(data[randomIdx])
+
+
+
+# random.choice(sequence)
+lis = [10 , 20 , 30 , 40 , 50 , 60]
+# print(random.choice(lis))
+# print(random.choice(lis , k=2))
+random.shuffle(lis)     # changes the positio of list elements in random order
+print(lis)
+
+print(random.choice([True , False]))
