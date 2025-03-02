@@ -40,3 +40,4 @@ for i in range(5) :
     print("\n")
     
     
+greeting = "Hello python"
