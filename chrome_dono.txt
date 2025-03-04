@@ -1,0 +1,5 @@
+
+Object.defineProperty(Runner.prototype , 'gameOver' , {
+     get: function(){ 
+        return function(){} 
+    }});
