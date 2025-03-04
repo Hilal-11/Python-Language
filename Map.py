@@ -85,3 +85,18 @@ print(oddList)
 
 # oddList = list(filter(lambda elms2: elms2 % 2 != 0 , elms2))
 # print(oddList)
+
+
+
+# names = ["hilal" , "waseem" , "junaid" , "abass" , "aadil"]
+# print(names)
+# def getUppercase(names):
+#     return names.upper()
+# names_res = list(map(getUppercase , names))
+# print(names_res)
+
+names = ["hilal" , "waseem" , "junaid" , "abass" , "aadil"]
+print(names)
+
+names_res = list(map(lambda names: names + " Ahmad" , names))
+print(names_res)
