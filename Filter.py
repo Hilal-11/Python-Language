@@ -33,3 +33,10 @@ def getElements2(elements) :
     return elements <= 10
 res2 = list(filter(getElements2 , data))
 print(res2)
+
+
+colors = ["red" , "green" , "yellow" , "royalblue" , "teal" , "gray" , "skyblue" , "grayscale" , "blueviolet"]
+def get_big_collors(colors) :
+    return len(colors) > 6
+big_colors = list(filter(get_big_collors, colors))
+print(big_colors)
