@@ -22,15 +22,20 @@ print(mul(10 , 6 , 2))
 #             print(i)
             
 
-students = [("Hilal" , 60), ("waseem" , 89) , ("Aadil", 70)]
+# students = [("Hilal" , 60), ("waseem" , 89) , ("Aadil", 70)]
 # students.sort()
 # print(students)
 
-def sort_students(data) :
-    return data[1]
+# def sort_students(data) :
+#     return data[1]
 
-students.sort(key=sort_students)
-print(students)
+# students.sort(key=sort_students)
+# print(students)
 
-students.sort(key=sort_students , reverse=True)
+# students.sort(key=sort_students , reverse=True)
+# print(students)
+
+
+students = [("Hilal" , 60), ("waseem" , 89) , ("Aadil", 70)]
+students.sort(key=lambda stud : stud[1] , reverse=False)
 print(students)
