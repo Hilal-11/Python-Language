@@ -1,0 +1,1 @@
+console.log('Typescript is advance version of javascript') document.write('developed by microsoft research foundation')

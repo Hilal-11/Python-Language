@@ -18,3 +18,24 @@ try :
         print(f.read())
 except FileNotFoundError :
     print("the file 'javsccript.js' does't exists")
+    
+    
+print("\n\n")
+    
+fl = open("typescript.ts" , "w")
+fl.write("console.log('Typescript is advance version of javascript') document.write('developed by microsoft research foundation')")
+# fl.close()
+try :
+    fl = open("typescript.ts" , "r")
+    print(fl.read())
+    # fl.close()
+except FileNotFoundError :
+    print("The file 'typescript.ts' does't exists")
+    
+    
+    
+    
+    
+    
+    
+    
