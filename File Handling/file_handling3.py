@@ -17,3 +17,16 @@ try :
         f.close()
 except :
     print("the file 'typescript.ts' does't exists")
+    
+    
+    
+#   override content on existing file
+
+with open("javascript.js" , "w") as f:
+    f.write("// Hello world")
+try :
+    with open("javascript.js" , 'r') as f:
+        print(f.read())
+except FileNotFoundError :
+    print("File does't existe")
+    

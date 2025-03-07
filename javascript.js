@@ -1,1 +1,1 @@
-document.write('hello javascript and typescript')
+// Hello world
