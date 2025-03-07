@@ -34,3 +34,24 @@ try :
         print(f.read()) 
 except FileNotFoundError :
     print("The file 'demofile.txt' does't exists")
+    
+    
+print("\n\n")
+try :
+    with open("demofile.txt" , "r") as f:
+        for i in f:
+            print(i) 
+except FileNotFoundError :
+    print("The file 'demofile.txt' does't exists")
+    
+    
+    
+    
+    
+print("\n\n")
+try :
+    with open("demofile.txt" , "r") as f:
+        print(f.readline()) 
+except FileNotFoundError :
+    print("The file 'demofile.txt' does't exists")    
+    
