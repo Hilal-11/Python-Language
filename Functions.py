@@ -83,3 +83,9 @@ def get_ares_circumfrence(radius = 1) : # default value = 1
 area , circumfrence = get_ares_circumfrence(3)
 print("Area = ", round(area , 3))
 print("circumfrence = ", round(circumfrence , 3))
+
+
+# lamda functions
+
+cube = lambda x : x ** 3
+print(cube(3))
