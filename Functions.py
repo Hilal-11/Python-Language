@@ -1,4 +1,4 @@
-
+import math
 
 #   Arbitrary argumants
 
@@ -40,4 +40,46 @@ printSeries1(10)
 print("\n")
 printSeries2(10)
 
+print("\n\n")
 
+# basic functions syntax
+
+def getSquare(n) :
+    return n ** 2
+
+def getCube(n) :
+    return n * n * n
+
+print(getSquare(2))
+print(getSquare(4))
+
+print(getCube(2))
+print(getCube(4))
+
+
+# function return multiple values
+def get_square_cude(n) :
+    square = n ** 2
+    cube = n * n * n
+    return (square , cube)
+
+print(get_square_cude(5))
+# function default parameters
+def get_square_cude(n = 1) :
+    square = n ** 2
+    cube = n * n * n
+    return (square , cube)
+
+print(get_square_cude())
+
+
+# given a radius return both ( area , circumference ) of a giver radius
+print("\n")
+
+def get_ares_circumfrence(radius = 1) : # default value = 1
+    area = math.pi * radius*radius
+    circumfrence = 2 * math.pi * radius
+    return (area , circumfrence)
+area , circumfrence = get_ares_circumfrence(3)
+print("Area = ", round(area , 3))
+print("circumfrence = ", round(circumfrence , 3))
