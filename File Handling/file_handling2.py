@@ -23,7 +23,7 @@ except FileNotFoundError :
 print("\n\n")
     
 fl = open("typescript.ts" , "w")
-fl.write("console.log('Typescript is advance version of javascript') document.write('developed by microsoft research foundation')")
+fl.write("console  .log('Typescript is advance version of javascript') document.write('developed by microsoft research foundation')")
 # fl.close()
 try :
     fl = open("typescript.ts" , "r")

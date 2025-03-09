@@ -1,5 +1,3 @@
-
-
 print("Oops -> Abstraction")
 
 class Animal:
