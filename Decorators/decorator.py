@@ -1,5 +1,4 @@
 import time
-
 def timer(fx) :
     def wrapper(*args , **kwargs) :
         start = time.time()
@@ -18,5 +17,4 @@ example_function(2)
 @timer
 def find_factorial(n):
     time.sleep(n)
-
-find_factorial(4) 
+find_factorial(4)     
