@@ -206,7 +206,7 @@ class Human :
         print("Humans can eat")
     def sleep(self):
         print("Humans can sleep")
-    def walk(self) :
+    def walk(self) :  
         print("Humans can walk")
     def talk(self) :
         print("Humans can talk")
