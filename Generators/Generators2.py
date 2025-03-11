@@ -40,3 +40,12 @@ print(next(sum_of_first_n))
 print(next(sum_of_first_n))
 print(next(sum_of_first_n))
 print(next(sum_of_first_n))
+
+
+
+print("\n")
+# doubles = [2 * i for i in range(100)]
+# print(doubles)
+
+doubles = list(2 * i for i in range(100))
+print(doubles)
