@@ -49,3 +49,6 @@ print("\n")
 
 doubles = list(2 * i for i in range(100))
 print(doubles)
+
+ls = [n for n in range(2 , 6)]
+print(ls)
