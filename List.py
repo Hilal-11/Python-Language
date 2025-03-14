@@ -112,3 +112,59 @@ print(list[0][2],end=" ")
 print(list[0][3],end=" ")
 print(list[0][4])
 
+
+
+
+#  again lists
+
+# list is a data structure 
+# list allows diplication
+# list is Mutable
+# list is ordered
+# allows to store multiiple values is a single variable
+# items = [11 , 9 , 2 , 6 , 10]
+# items[0] = 100
+# items[len(items) -1] = 99
+# print(items)
+
+items = [10 , 22 , 34 , 90 , 'A' , 'X']
+print(items)
+
+# get length of list 
+length = len(list)
+print(length)
+
+#  slicing() --> extrating the portion of list
+
+# print(slice(list[0 : 3]))
+
+items.append('Hilal')
+print(items)
+
+items.pop()
+print(items)
+
+items.insert(0 , "Waseem")
+print(items)
+print("\n\n")
+
+
+
+dataItems = [ 18 ,10 , 12 , 14 , 16]
+print(dataItems)
+
+# dataItems.sort()
+# print(dataItems)
+
+# idx = dataItems.index(12)
+# print(idx)
+
+# dataItems.clear()
+# print(dataItems)
+
+# dataItems.reverse()
+# print(dataItems)
+
+
+
+print("\n\n")
