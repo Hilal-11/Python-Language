@@ -10,7 +10,9 @@ def perform_subtraction(x , y):
 def perform_multiplication(x , y):
     result = x * y
     print(f"Multiplication of {x} * {y} = " , result)
-    
+def perform_division(x , y):
+    result = x / y
+    print(f"Division of {x} / {y} = " , result)
 def main() :
     
     while True:
@@ -38,10 +40,20 @@ def main() :
             num1 = int(input("Enter first number :- "))
             num2 = int(input("Enter second number :- "))
             perform_multiplication(num1 , num2)
-           
+        elif(choice == '4') :
+            num1 = int(input("Enter first number :- "))
+            num2 = int(input("Enter second number :- "))
+            if(num2 == 0):
+                print("Dividing by zero is not allowed")
+            else:
+                perform_division(num1 , num2)
+        elif(choice == '5') :
+            pass
+        else: 
+            print("Invalid choice selected")
+            break
             
                   
-        
-
+    
 if __name__ == '__main__' :
     main()
