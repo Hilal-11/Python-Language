@@ -13,6 +13,15 @@ def perform_multiplication(x , y):
 def perform_division(x , y):
     result = x / y
     print(f"Division of {x} / {y} = " , result)
+    
+def perform_comparision(x , y):
+    if(x > y):
+        print(f"{x} is greaterthan {y}")
+    elif(x < y):
+        print(f"{x} is lessthan {y}")
+    else:
+        print(f"{x} is equal to {y}")
+        
 def main() :
     
     while True:
@@ -48,7 +57,9 @@ def main() :
             else:
                 perform_division(num1 , num2)
         elif(choice == '5') :
-            pass
+            num1 = int(input("Enter first number :- "))
+            num2 = int(input("Enter second number :- "))
+            perform_comparision(num1 , num2)
         else: 
             print("Invalid choice selected")
             break
