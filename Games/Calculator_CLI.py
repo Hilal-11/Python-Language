@@ -23,9 +23,7 @@ def perform_comparision(x , y):
         print(f"{x} is equal to {y}")
         
 def main() :
-    
     while True:
-        
         print("\n Python CLI Calculator  | Choose an option to perforn calculations \n")
         print("*" * 100)
         print("1:- Addition operation")
@@ -33,6 +31,8 @@ def main() :
         print("3:- Multiplication operation")
         print("4:- Division operation")
         print("5:- Comparision operation")
+        print("6:- Exit")
+        
         print("*" * 100)
         
         choice = input("Enter your choice :- ")  
@@ -60,6 +60,8 @@ def main() :
             num1 = int(input("Enter first number :- "))
             num2 = int(input("Enter second number :- "))
             perform_comparision(num1 , num2)
+        elif(choice == '6') :
+            return
         else: 
             print("Invalid choice selected")
             break
