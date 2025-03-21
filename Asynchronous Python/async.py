@@ -51,18 +51,37 @@ import time
 
 
 # synchronous manner execution
-def function1() :
+# def function1() :
+#     time.sleep(2)
+#     print("Function 1 is executed")
+
+# def function2() :
+#     time.sleep(1)
+#     print("Function 2 is executed")
+
+# def function3() :
+#     time.sleep(3)
+#     print("Function 3 is executed")
+    
+# function1()
+# function2()
+# function3()
+
+async def function1() :
     time.sleep(2)
     print("Function 1 is executed")
 
-def function2() :
+async def function2() :
     time.sleep(1)
     print("Function 2 is executed")
 
-def function3() :
+async def function3() :
     time.sleep(3)
     print("Function 3 is executed")
     
-function1()
-function2()
-function3()
+async def main() : 
+    await function1()
+    await function2()
+    await function3()
+    
+main()
