@@ -1,5 +1,4 @@
 import asyncio
-import time 
 import requests
 
 URL = "https://instagram.com/favicon.ico"
