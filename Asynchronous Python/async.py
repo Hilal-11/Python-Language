@@ -67,8 +67,30 @@ import time
 # function2()
 # function3()
 
+# important !!!
+# async def function1() :
+#     await asyncio.sleep(1)
+#     print("Function 1 is executed")
+
+# async def function2() :
+#     await asyncio.sleep(1)
+#     print("Function 2 is executed")
+
+# async def function3() :
+#     await asyncio.sleep(4)
+#     print("Function 3 is executed")
+    
+# async def main() : 
+#     task = asyncio.create_task(function1())
+#     await function2()
+#     await function3()
+    
+# asyncio.run(main())
+
+
+
 async def function1() :
-    await asyncio.sleep(1)
+    await asyncio.sleep(3)
     print("Function 1 is executed")
 
 async def function2() :
@@ -76,12 +98,16 @@ async def function2() :
     print("Function 2 is executed")
 
 async def function3() :
-    await asyncio.sleep(4)
+    await asyncio.sleep(2)
     print("Function 3 is executed")
     
 async def main() : 
-    task = asyncio.create_task(function1())
-    await function2()
-    await function3()
+    L = await asyncio.gather(
+        function1(),
+        function2(),
+        function3(),
+    )
+    print(L)
     
+
 asyncio.run(main())
