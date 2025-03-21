@@ -68,20 +68,20 @@ import time
 # function3()
 
 async def function1() :
-    time.sleep(2)
+    await asyncio.sleep(1)
     print("Function 1 is executed")
 
 async def function2() :
-    time.sleep(1)
+    await asyncio.sleep(1)
     print("Function 2 is executed")
 
 async def function3() :
-    time.sleep(3)
+    await asyncio.sleep(4)
     print("Function 3 is executed")
     
 async def main() : 
-    await function1()
+    task = asyncio.create_task(function1())
     await function2()
     await function3()
     
-main()
+asyncio.run(main())
