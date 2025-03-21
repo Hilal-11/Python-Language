@@ -92,14 +92,17 @@ import time
 async def function1() :
     await asyncio.sleep(3)
     print("Function 1 is executed")
+    return "Hilal"
 
 async def function2() :
     await asyncio.sleep(1)
     print("Function 2 is executed")
+    return "Hilal"
 
 async def function3() :
     await asyncio.sleep(2)
     print("Function 3 is executed")
+    return "Hilal"
     
 async def main() : 
     L = await asyncio.gather(
